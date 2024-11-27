@@ -1,0 +1,22 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt autocd beep extendedglob nomatch notify
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/loganb/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# include the other scripts into this one
+source "$HOME/.zsh_helpers/alias.zsh"
+source "$HOME/.zsh_helpers/prompt.zsh"
+source "$HOME/.zsh_helpers/path.zsh"
+#source ".zsh_helpers/"
+#source ".zsh_helpers/"
+
+fastfetch
